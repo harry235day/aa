@@ -52,13 +52,13 @@ public class VoiceLineView extends View {
 
 
     private long speedY = 50;
-    private float rectWidth = 25;
-    private float rectSpace = 5;
+    private float rectWidth = 200;
+    private float rectSpace = 50;
     private float rectInitHeight = 4;
     private List<Rect> rectList;
 
     private long lastTime = 0;
-    private int lineSpeed = 90;
+    private int lineSpeed = 140;
 
     List<Path> paths = null;
 
@@ -91,8 +91,8 @@ public class VoiceLineView extends View {
             middleLineHeight = typedArray.getDimension(R.styleable.voiceView_middleLineHeight, 4);
             lineSpeed = typedArray.getInt(R.styleable.voiceView_lineSpeed, 90);
             fineness = typedArray.getInt(R.styleable.voiceView_fineness, 1);
-            paths = new ArrayList<>(20);
-            for (int i = 0; i < 20; i++) {
+            paths = new ArrayList<>(5);
+            for (int i = 0; i < 5; i++) {
                 paths.add(new Path());
             }
         }
@@ -100,11 +100,17 @@ public class VoiceLineView extends View {
     }
 
     @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
         if (mode == RECT) {
             drawVoiceRect(canvas);
         } else {
-            drawMiddleLine(canvas);
+//            drawMiddleLine(canvas);
             drawVoiceLine(canvas);
         }
         run();
@@ -134,7 +140,7 @@ public class VoiceLineView extends View {
         int moveY = getHeight() / 2;
         for (int i = 0; i < paths.size(); i++) {
             paths.get(i).reset();
-            paths.get(i).moveTo(getWidth(), getHeight() / 2);
+            paths.get(i).moveTo(getWidth(), getHeight()/2);
         }
         for (float i = getWidth() - 1; i >= 0; i -= fineness) {
             amplitude = 4 * volume * i / getWidth() - 4 * volume * i * i / getWidth() / getWidth();
@@ -144,11 +150,11 @@ public class VoiceLineView extends View {
             }
         }
         for (int n = 0; n < paths.size(); n++) {
-            if (n == paths.size() - 1) {
-                paintVoicLine.setAlpha(255);
-            } else {
-                paintVoicLine.setAlpha(n * 130 / paths.size());
-            }
+//            if (n == paths.size() - 1) {
+//                paintVoicLine.setAlpha(255);
+//            } else {
+//                paintVoicLine.setAlpha(n * 130 / paths.size());
+//            }
             if (paintVoicLine.getAlpha() > 0) {
                 canvas.drawPath(paths.get(n), paintVoicLine);
             }

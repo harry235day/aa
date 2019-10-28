@@ -1,0 +1,10 @@
+
+8squid:S1170"!Make this final field static too.(Çş¯Ş
+7squid:S1170"!Make this final field static too.(€Ø 
+_squid:UnusedPrivateMethodw"3Remove this unused private "drawMiddleLine" method.(¢ôÀŞ8‰È’à-
+fsquid:S00116"ORename this field "LINE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€Ø 
+nsquid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(Ñ§ ©ùÿÿÿÿ8‰È’à-
+gsquid:S00116"ORename this field "RECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çş¯Ş
+osquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(¸“àüúÿÿÿÿ8ÒøÛ’à-
+osquid:S1450-"XRemove the "amplitude" field and declare it as a local variable in the relevant methods.(à‰ ±
+>squid:S1068"(Remove this unused "LINE" private field.(€Ø 

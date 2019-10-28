@@ -1,0 +1,12 @@
+
+msquid:UselessImportCheck"=Remove this unused import 'android.text.style.UnderlineSpan'.(Îãú·øÿÿÿÿ8©·éÔ-
+Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8é¸¤éÔ-
+Nsquid:S19051"0Remove this unnecessary cast to "VoiceLineView".(ÒŞÍ£8é¸¤éÔ-
+^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8Ê±¨éÔ-
+Fsquid:S1148E"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8é¸¤éÔ-
+d
+squid:S899;"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8é¸¤éÔ-
+Fsquid:S1148i"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8é¸¤éÔ-
+dsquid:S2142h"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8é¸¤éÔ-
+Ysquid:S1854&"6Remove this useless assignment to local variable "db".(ƒÁ›şÿÿÿÿ8ÔñÌ’à-
+Jsquid:S1481!"'Remove this unused "db" local variable.(ÌõµÅúÿÿÿÿ8ÔñÌ’à-
